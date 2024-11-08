@@ -1,4 +1,4 @@
-import CircularProgress from '@mui/material/CircularProgress';
+import CircularProgress from "@mui/material/CircularProgress";
 
 interface ILoadingButtonProvider {
   children: React.ReactNode;
@@ -11,12 +11,12 @@ const LoadingButtonProvider = ({
   children,
   isLoading,
   progressSize = 20,
-  className = 'rounded-lg',
+  className = "rounded-lg",
 }: ILoadingButtonProvider) => {
   return (
     <div className={`relative ${className} overflow-hidden`}>
       {isLoading && (
-        <div className="absolute top-0 left-0 bottom-0 right-0 flex justify-center items-center bg-gray-300/70 z-10">
+        <div className="absolute bottom-0 left-0 right-0 top-0 z-10 flex items-center justify-center bg-gray-300/70">
           <CircularProgress size={progressSize} />
         </div>
       )}
