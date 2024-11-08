@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
-import routePath from '~/constant/routePath';
-import useGetMe from '~/hooks/user/useGetMe';
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import routePath from "~/constant/routePath";
+import useGetMe from "~/hooks/user/useGetMe";
 
 const NeedAuthenTemplate = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
